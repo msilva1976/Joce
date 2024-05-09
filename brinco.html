@@ -8,57 +8,53 @@
     <link rel="stylesheet" href="/website/css/uicons-outline-rounded.css">
     <link rel="stylesheet" href="./css/output.css">
 
-    <title>JOCE - Basiquinhos</title>
+    <title>JOCE - Joias para toda a vida</title>
 </head>
 <body>
     <!--https://www.youtube.com/watch?v=FXm7Dfre60I-->
 
-    <header class=" w-full h-[200px] bg-zinc-900 bg-home bg-cover bg-center " >
+    <header class=" w-full h-[250px] bg-zinc-900 bg-home bg-cover bg-center " >
         <div class=" w-full h-full flex flex-col justify-center items-center">
-            
             <img src="./assets/Logotipo31.png" alt="Logo da loja Joce" class=" w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 "/>
-             
-             <h1 class=" text-3xl mt-4 mb-2 font-bold text-white ">Joce joias</h1>
-             
+            
+              
+             <h1 class=" text-3xl mt-4 mb-2 font-bold text-white mt-10 ">Joce joias</h1>
+            
 
-             <div class=" bg-green-600 px-4 py-1 rounded-lg mt-5 font-medium text-white " id="date-span" >Brinquinhos</div>
+             <div class=" bg-green-600 px-4 py-1 rounded-lg mt-5 font-medium text-white " id="date-span" ><span>Brincos</span></div>
         </div>
         
     </header>
-    
-    <!--inicio do menu-->
-    <div id="menu">
-        <main class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-20 mt-10 ml-10 mr-20 border-black ">
-            <!--produtos itens-->
-            <div class=" flex gap-2">
-                <img src="./assets/Basiquinhos: Brincos de Pérolas Banho de Ouro 18k cod br003118-01-0800-0000-0000-01 .png" 
-                alt="joia 1"
-                class="w-58 h-58 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
-
-                <div>
-                    <p class=" font-bold">Basiquinhos</p>
-                    <p class=" text-sm"> Basiquinhos: Brincos de Pérolas Banho de Ouro 18k <br>cod br003118-01-0800-0000-0000-01 </p>
-                    <div class=" flex items-center gap-2 justify-between mt-3">
-                        <p class=" font-bold text-lg">R$ 69.00</p>
-                        <a href="./index.html">Voltar</a>
-                       
-                        <button class=" bg-blue-600 px-5 rounded add-to-cart-btn"
-                                data-name = "3251 Conjunto De Anél, Brincos e Pingente - Juliano"
-                                data-price="69.00"
-                            >
-                           
-                           
-                            <i class="fi fi-rr-shopping-cart text-lg text-white py-1"></i>
-                        </button>
-                    </div>
-                </div>
-            
+    <figure class="md:flex bg-slate-100  rounded-xl p-8 md:p-0 bg-white mb-5">
+        <img class=" mt-5 mb-5 ml-5 border-solid border-2 border-sky-200  " src="/assets/Basiquinhos: Brincos de Pérolas Banho de Ouro 18k cod br003118-01-0800-0000-0000-01 .png" alt="" width="384" height="512">
+        <div class="pt-6 md:p-8 text-center md:text-left space-y-4 ">
+          <blockquote>
+            <p class="text-lg font-medium">
+                Basiquinhos: Brincos de Pérolas Banho de Ouro 18k <br>cod br003118-01-0800-0000-0000-01
+          </blockquote>
+          <figcaption class="font-medium ">
+            <div class="text-sky-500 dark:text-sky-400">
+              Preço
             </div>
-            
-            <!-- produto dois-->
-
-   
-    <!--modal cart-->
+            <div class="text-slate-700 dark:text-slate-500">
+              R$ 69.90
+            </div>
+            <div class="text-slate-700 dark:text-slate-500 ">
+                <img src="/assets/forma de pagamento.png" alt="">
+              </div>
+              <button class=" bg-blue-600 px-5 rounded add-to-cart-btn"
+              data-name = "3251 Conjunto De Anél, Brincos e Pingente - Juliano"
+              data-price="69.00">         
+          <i class="fi fi-rr-shopping-cart text-lg text-white py-1"></i>
+          
+      </button>
+      <button class="bg-blue-600 px-5 rounded add-to-cart-btn text-white"><a href="/index.html">Voltar</a></button>
+      
+          </figcaption>
+        </div>
+    </figure>
+    <!--card-modal-->
+    <!---->
     <div class=" bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
     id="cart-modal"> 
         <div class=" bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
@@ -80,18 +76,15 @@
             </div>
         </div>
     </div>
+    
 
     <footer class=" w-full bg-blue-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
-        <button class=" flex items-center gap-2 text-white font-bold"
-        id="cart-btn">
-            (<span id="cart-count">0</span>)
-            Veja o seu carrinho
-            <i class="fi fi-rr-shopping-cart text-lg text-white"></i>
 
-        </button>
     </footer>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="/javaScript/script.js"></script>
+
+ 
 
 </body>
 </html>
