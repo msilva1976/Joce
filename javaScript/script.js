@@ -6,8 +6,10 @@ const cartTotal = document.getElementById("cart-total")
 const checkoutBtn = document.getElementById("checkou-btn")
 const closeModalBtn = document.getElementById("close-modal-btn")
 const cartCaunter = document.getElementById("cart-count")
+const cartCaunter2 = document.getElementById("cart-count2")
 const addressInput = document.getElementById("adress")
 const addressWarn = document.getElementById("adress-warn")
+const cartBtnGlobal = document.getElementById("cart-btn-global")
 
 let cart = [];
 
@@ -17,6 +19,14 @@ cartBtn.addEventListener("click",function () {
     updateCartModal();
     cartModal.style.display = "flex"
 })
+
+//abri o modal do carrida das paginas do produto
+cartBtnGlobal.addEventListener("click",function(){
+    updateCartModal();
+    cartModal.style.display = "flex"
+
+})
+
 
 // fecar o modal quaando clicar fora
 
@@ -94,6 +104,8 @@ function updateCartModal(){
   
     
     cartCaunter.innerHTML = cart.length;
+    cartCaunter2.innerHTML = cart.length;
+   
    // <div></div>
    // <p></p>
 }
